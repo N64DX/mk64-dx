@@ -1186,13 +1186,13 @@ void spawn_course_actors(void) {
  */
 void init_actors_and_load_textures(void) {
     set_segment_base_addr(3, (void*) gNextFreeMemoryAddress);
-    D_802BA050 = dma_textures(gTextureGreenShell0, 0x00000257U, 0x00000400U);
-    dma_textures(gTextureGreenShell1, 0x00000242U, 0x00000400U);
-    dma_textures(gTextureGreenShell2, 0x00000259U, 0x00000400U);
-    dma_textures(gTextureGreenShell3, 0x00000256U, 0x00000400U);
-    dma_textures(gTextureGreenShell4, 0x00000246U, 0x00000400U);
-    dma_textures(gTextureGreenShell5, 0x0000025EU, 0x00000400U);
-    dma_textures(gTextureGreenShell6, 0x0000025CU, 0x00000400U);
+    D_802BA050 = dma_textures(gTextureGreenShell0, 0x0000024EU, 0x00000400U);
+    dma_textures(gTextureGreenShell1, 0x00000250U, 0x00000400U);
+    dma_textures(gTextureGreenShell2, 0x00000258U, 0x00000400U);
+    dma_textures(gTextureGreenShell3, 0x0000025EU, 0x00000400U);
+    dma_textures(gTextureGreenShell4, 0x00000258U, 0x00000400U);
+    dma_textures(gTextureGreenShell5, 0x00000269U, 0x00000400U);
+    dma_textures(gTextureGreenShell6, 0x00000260U, 0x00000400U);
     dma_textures(gTextureGreenShell7, 0x00000254U, 0x00000400U);
     D_802BA054 = dma_textures(gTextureBlueShell0, 0x0000022AU, 0x00000400U);
     dma_textures(gTextureBlueShell1, 0x00000237U, 0x00000400U);
