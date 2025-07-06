@@ -11,24 +11,45 @@ It supports and builds the following versions:
 | mk64.eu.v10.z64 | EUR 1.0 | a729039453210b84f17019dda3f248d5888f7690 |
 | mk64.eu.v11.z64 | EUR 1.1 | f6b5f519dd57ea59e9f013cc64816e9d273b2329 |
 
-## Progress
-
-[![Linux Compile](https://github.com/n64decomp/mk64/actions/workflows/linux-compile.yml/badge.svg)](https://github.com/n64decomp/mk64/actions/workflows/linux-compile.yml)
-
-![Build Status](https://n64decomp.github.io/mk64/total_progress.svg)
-
 ## Quick Start
 
+Install dependencies:
+```
+sudo apt install cmake build-essential pkg-config git binutils-mips-linux-gnu python3 zlib1g-dev libaudiofile-dev libcapstone-dev
+```
+
+Clone repository recursively:
+```
+git clone https://github.com/N64DX/mk64-dx --recurse-submodules
+```
+
+Change directory:
+```
+cd mk64-dx
+```
+
+If not cloned recursively, run:
 ```
 git submodule update --init --recursive
-OR
-git clone https://github.com/n64decomp/mk64 --recurse-submodules
 ```
-Extract assets
+
+Prepare input ROM `baserom.version.z64` in root folder:
 ```
-make -C tools -j
+baserom.us.z64
+baserom.eu.v10.z64
+baserom.eu.v11.z64
+```
+
+Build US version:
+```
 make assets -j
 make -j
+```
+
+Build a different release:
+```
+make assets -j VERSION=eu.v11
+make -j VERSION=eu.v11
 ```
 
 ## Building
