@@ -6142,7 +6142,7 @@ void render_menus(MenuItem* arg0) {
                 func_800A2D1C(arg0);
                 break;
             case MENU_ITEM_TYPE_05E: /* switch 6 */
-                gDisplayListHead = func_80096CD8(gDisplayListHead, 0x00000019, 0x00000072, 0x0000007CU, 0x0000004AU);
+                // gDisplayListHead = func_80096CD8(gDisplayListHead, 0x00000019, 0x00000072, 0x0000007CU, 0x0000004AU);
                 break;
             case MENU_ITEM_TYPE_0AA: /* switch 6 */
                 func_800A2EB8(arg0);
